@@ -1,7 +1,6 @@
 #include "framework.h"
 #include "object.h"
 #include "point.h"
-#include "functions.h"
 #include "trail.h"
 
 RECT rc;

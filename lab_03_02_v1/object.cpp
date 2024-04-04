@@ -15,21 +15,6 @@ Object::Object(Point _pos, Point _size, COLORREF _color, COLORREF _back_color, i
     last_pos( _pos),
     trail(new Trail[_trail_len * speed_factor]) {}
 
-/*
-void Object::Init(Point _pos, Point _size, COLORREF _color, COLORREF _back_color, int _trail_len) {
-    pos = _pos;
-    size = _size;
-    color = _color;
-    back_color = _back_color;
-    trail_len = _trail_len;
-
-    speed = Point(0, 0);
-    trail_len_now = 0;
-
-    TrailInit(_trail_len);
-}
-*/
-
 void Object::TrailInit() {
 
     for (int i = 0; i < trail_len * speed_factor; i++) {

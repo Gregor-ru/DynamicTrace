@@ -9,7 +9,6 @@ class Object {
 public:
     Object();
     Object(Point _pos, Point _size, COLORREF _color, COLORREF _back_color, int _trail_len);
-    //void Init(Point _pos, Point _size, COLORREF _color, COLORREF _back_color, int _trail_len);
     void TrailInit();
     void Control();
     void Move();
@@ -27,7 +26,6 @@ private:
     int trail_len_now;
     Trail* trail;
 
-    //void TrailInit(int _trail_len);
     void Show(HDC hdc);
     void TrailShow(HDC hdc);
     void AllShow(HDC hdc, RECT rc);
